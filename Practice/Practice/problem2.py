@@ -10,7 +10,10 @@ Instead of adding the two previous values together, it adds the square of n to t
 calling mystery with n - 1.
 
 '''
-
+def main():
+   number = int(input("Enter a positive integer: "))
+   result = mystery(number)
+   print("Mystery Number:", result)
 def mystery(n) :
    if n <= 0 :
       return 0
@@ -18,3 +21,4 @@ def mystery(n) :
       smaller = n - 1
       return mystery(smaller) + n * n
    
+main()
